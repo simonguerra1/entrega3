@@ -1,0 +1,76 @@
+.pinterest-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  grid-row: span 10;
+}
+
+.pinterest-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pinterest-image {
+  max-height: 380%px;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 15px 0;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-actions button {
+  background-color: #e60023;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-actions button:hover {
+  background-color: #c4001d;
+}
+
+.card-info {
+  margin: 10px;
+}
+
+#small-logos {
+  display: none;
+  padding: 10px;
+}
+
+#small-logos > a > img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 556px) {
+  #small-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card-info {
+    display: none;
+  }
+}
